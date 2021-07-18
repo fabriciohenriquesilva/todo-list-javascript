@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap');
+
+main {
+    width: 60%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+h1, h2, p, li, input, button {
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 5px;
+    margin: 5px 0;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid lightskyblue;
+    margin: 5px;
+    padding: 5px;
+}
+
+.item-marcado {
+    font-style: italic;
+    color: #CCC;
+    text-decoration: line-through;
+}
+
+/* input[type="text"] {
+    width: 60%;
+}
+
+input[type="text"]:focus-visible {
+    border: 1px solid lightsalmon;
+    color: blue;
+}
+
+button {
+    width: 30%;
+} */
