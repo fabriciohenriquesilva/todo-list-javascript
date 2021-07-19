@@ -8,6 +8,7 @@ main {
 
 h1, h2, p, li, input, button {
     font-family: 'Open Sans', sans-serif;
+    /* color: white; */
 }
 
 h1 {
@@ -26,7 +27,7 @@ li {
 
 input {
     border: none;
-    border-bottom: 1px solid lightskyblue;
+    border-bottom: 1px solid black;
     margin: 5px;
     padding: 5px;
 }
@@ -35,6 +36,27 @@ input {
     font-style: italic;
     color: #AAA;
     text-decoration: line-through;
+}
+
+.conteudo {
+    /* background-color: #eee; */
+}
+
+img {
+    margin-left: 5px;
+}
+
+button {
+    font-weight: 600;
+    padding: 5px;
+    color: #454545;
+    background-color: #eee;
+    border: 2px solid #454545;
+}
+
+button:hover {
+    color: white;
+    background-color: #454545;
 }
 
 /* input[type="text"] {

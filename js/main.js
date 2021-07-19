@@ -12,12 +12,13 @@ btoAdiciona.addEventListener("click", function() {
 
     let label = document.createElement("label");
     label.textContent = inputAdiciona.value;
+    label.contentEditable = "true";
     li.appendChild(label);
 
-    let img = document.createElement("img");
-    img.src = "../assets/icons/delete.png";
-    img.classList.add("remove-item");
-    li.appendChild(img);
+    let imgExclui = document.createElement("img");
+    imgExclui.src = "../assets/icons/delete.png";
+    imgExclui.classList.add("remove-item");
+    li.appendChild(imgExclui);
 
     lista.appendChild(li);
     inputAdiciona.value = "";
@@ -41,6 +42,5 @@ lista.addEventListener("click", function(event) {
     let li = event.target.parentNode;
     if(event.target.tagName == "IMG"){
         li.remove();
-        console.log(li);
     }
 });
