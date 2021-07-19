@@ -10,6 +10,11 @@ h1, h2, p, li, input, button {
     font-family: 'Open Sans', sans-serif;
 }
 
+h1 {
+    font-size: 32px;
+    margin: 0 auto;
+}
+
 ul {
     list-style-type: none;
 }
@@ -28,7 +33,7 @@ input {
 
 .item-marcado {
     font-style: italic;
-    color: #CCC;
+    color: #AAA;
     text-decoration: line-through;
 }
 
