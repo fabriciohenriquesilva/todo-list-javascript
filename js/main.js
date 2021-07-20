@@ -24,12 +24,9 @@ btoAdiciona.addEventListener("click", function() {
     inputAdiciona.value = "";
 });
 
-// ul > li > checkbox + label
 lista.addEventListener("click", function(event) {
-    // console.log(event.target.parentNode);
     if(event.target.parentNode.tagName == "LI"){
         let li = event.target.parentNode;
-        // console.log(li);
         if(event.target.tagName == "INPUT"){
             let label = li.querySelector("label");
             console.log(label.textContent);
@@ -41,6 +38,11 @@ lista.addEventListener("click", function(event) {
 lista.addEventListener("click", function(event) {
     let li = event.target.parentNode;
     if(event.target.tagName == "IMG"){
-        li.remove();
+
+        li.classList.add("fade-out")
+
+        setTimeout(function() {
+            li.remove();
+        }, 500);
     }
 });

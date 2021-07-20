@@ -1,35 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap');
 
-main {
-    width: 60%;
-    margin: 0 auto;
-    border: 1px solid black;
+body {
+    background-image: linear-gradient(to bottom right, #66CAF2, #042959);
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
-h1, h2, p, li, input, button {
+.conteudo {
+    width: 33vw;
+    height: fit-content;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 3px 3px 3px black;
+    padding: 30px;
+}
+
+h1, li, label, input, button {
     font-family: 'Open Sans', sans-serif;
-    /* color: white; */
 }
 
 h1 {
+    margin: 5% 0;
     font-size: 32px;
-    margin: 0 auto;
+    text-align: center;
+    color: #025E73;
 }
 
 ul {
     list-style-type: none;
+    margin: 5% 0;
 }
 
 li {
     padding: 5px;
     margin: 5px 0;
+    
 }
 
-input {
-    border: none;
-    border-bottom: 1px solid black;
+.adicao-tarefa {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input[type="checkbox"] {
     margin: 5px;
+}
+
+input[type="text"] {
+    border: none;
+    border-bottom: 1px solid #66CAF2;
+    margin: 15px;
     padding: 5px;
+    width: 60%;
+    outline: none;
+}
+
+label {
+    outline: none;
+    font-size: 18px;
 }
 
 .item-marcado {
@@ -38,36 +68,30 @@ input {
     text-decoration: line-through;
 }
 
-.conteudo {
-    /* background-color: #eee; */
-}
-
 img {
     margin-left: 5px;
 }
 
 button {
     font-weight: 600;
-    padding: 5px;
-    color: #454545;
-    background-color: #eee;
-    border: 2px solid #454545;
+    padding: 8px;
+    margin: 15px;
+    color: #fff;
+    background-color: #02D876;
+    border: none;
+    border-bottom: 3px solid #025E73;
+    border-right: 3px solid #025E73;
+    outline: none;
 }
 
 button:hover {
     color: white;
-    background-color: #454545;
+    background-color: #025E73;
+    border-bottom: 3px solid #02D876;
+    border-right: 3px solid #02D876;
 }
 
-/* input[type="text"] {
-    width: 60%;
+.fade-out {
+    opacity: 0;
+    transition: 0.5s;
 }
-
-input[type="text"]:focus-visible {
-    border: 1px solid lightsalmon;
-    color: blue;
-}
-
-button {
-    width: 30%;
-} */
